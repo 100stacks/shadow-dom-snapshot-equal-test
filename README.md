@@ -1,1 +1,1 @@
-# snapshot-equal-test
+# Shadow DOM Snapshot Equal Test
