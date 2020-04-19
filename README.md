@@ -18,7 +18,7 @@ Add a test to verify `<hx-alert>` Shadow DOM equals Snapshot.
     `);
 
     // test fails to generate and test snapshot equal check
-    expect(el).shadowDom.to.notEqualSnapshot();
+    expect(el).shadowDom.to.equalSnapshot();
   });
 ```
 
