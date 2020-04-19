@@ -36,4 +36,21 @@ describe('HxAlert', () => {
 
     await expect(el).shadowDom.to.be.accessible();
   });
+
+  it('[TEST FAILS] shadow DOM should equal snapshot', async () => {
+    const el = await fixture(html`
+      <hx-alert title="foo"></hx-alert>
+    `);
+
+    // test fails to generate and test snapshot equal check
+    expect(el).shadowDom.to.notEqualSnapshot();
+  });
+
+  it('shadow DOM should FAIL equal check', async () => {
+    const el = await fixture(html`
+      <hx-alert title="foo"></hx-alert>
+    `);
+
+    expect(el).shadowDom.to.equal('bazz');
+  });
 });
