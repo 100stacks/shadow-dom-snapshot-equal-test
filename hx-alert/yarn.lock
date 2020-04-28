@@ -868,7 +868,7 @@
   dependencies:
     "@open-wc/scoped-elements" "^1.1.1"
 
-"@open-wc/testing-karma@^3.0.0":
+"@open-wc/testing-karma@^3.3.17":
   version "3.3.17"
   resolved "https://registry.yarnpkg.com/@open-wc/testing-karma/-/testing-karma-3.3.17.tgz#3104083acd843906802eb69959025eb42b8007e7"
   integrity sha512-dFjXua5/edY7BAWInXF0URxOIDKpyCnU/TUfbZGo2ZDi0ZkSHpeE6sax/bg1T/ymTBWgg1tPqP+IP7he1A7ZGA==
