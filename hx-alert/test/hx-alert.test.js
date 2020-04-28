@@ -53,4 +53,13 @@ describe('HxAlert', () => {
 
     expect(el).shadowDom.to.equal('bazz');
   });
+
+  it('chai rendered Shadow DOM should equal element Shadow Root DOM', async () => {
+    const el = await fixture(html`
+      <hx-alert title="foo"></hx-alert>
+    `);
+    const sr = el.shadowRoot.innerHTML;
+
+    expect(el).shadowDom.to.equal(sr);
+  });
 });
